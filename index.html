@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="en-US" >
+<html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lepsfly</title>
-<style>
-body { background: #333; margin: 0; padding: 0; }
-#game-canvas { margin: 0 auto; }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lepsfly</title>
+    <style>
+        body {
+            background: #333;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        #game-canvas {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+    </style>
 </head>
+
 <body>
-<div id="game-canvas"></div>
-<script src="js/phaser.min.js"></script>
-<script type="text/javascript">window.Phaser || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.4/phaser.min.js"><\/script>')</script>
-<script src="js/game.js"></script>
+    <div id="game-canvas"></div>
+    <script src="js/phaser.min.js"></script>
+    <script
+        type="text/javascript">window.Phaser || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.4/phaser.min.js"><\/script>')</script>
+    <script src="js/game.js"></script>
 </body>
+
 </html>
